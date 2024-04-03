@@ -6,7 +6,10 @@
 	--light-pink: #ff8fd8;
 	--light-red: #ff4242;
 
-	--very-dark-cyan: hsl(192, 100%, 9%);
+	--very-dark-cyan: #00252e;
+	--very-dark-cyant: #00252e39;
+	--gray: #808e9a;
+
 	--very-pale-blue: hsl(207, 100%, 98%);
 
 	--shadow-pink: 0 0 9px 0 #ff52c138;
@@ -32,4 +35,10 @@ body {
 	background-color: #444;
 	font-family: 'Open sans';
 	min-height: 100vh;
+	/* overflow: hidden; */
+}
+
+/* temp */
+main {
+	background-color: white;
 }

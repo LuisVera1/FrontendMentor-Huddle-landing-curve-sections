@@ -1,0 +1,23 @@
+.button__getStarted {
+	background-color: var(--pink);
+	border-radius: 50px;
+	box-shadow: 0 6px 13px 0 var(--very-dark-cyant);
+	color: white;
+	font-size: 1.25rem;
+	font-weight: 700;
+	line-height: 1.875;
+	padding: 21.25px 106px;
+	text-decoration: none;
+}
+
+.button__getStarted:hover {
+	background-color: var(--light-pink);
+}
+
+@media (max-width: 500px) {
+	.button__getStarted {
+		font-size: 0.75rem;
+		line-height: 1.125rem;
+		padding: 11.25px 39.8px;
+	}
+}

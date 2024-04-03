@@ -1,44 +1,22 @@
 import './App.css'
-import { Nav } from './components/Nav'
+import { MainSection } from './components/MainSection/MainSection'
+import { Nav } from './components/Nav/Nav'
+import { Statistics } from './components/Statistics/Statistics'
 
 function App() {
 
   return (
     <>
-
-
       <header>
         <Nav />
       </header>
 
-
       <main>
-        <h1>Build The Community Your Fans Will Love</h1>
-        <p>
-          Huddle re-imagines the way we build communities. You have a voice, but so does
-          your audience. Create connections with your users as you engage in genuine discussion.
-        </p>
-
-        <a href="#">Get Started For Free</a>
-
-        <img src="" alt="" />
+        <MainSection />
       </main>
 
-
-
       <section>
-
-        <div>
-          <img src="" alt="" />
-          <h2> 1.4k+</h2>
-          <p>Communities Formed</p>
-        </div>
-
-        <div>
-          <img src="" alt="" />
-          <h2>2.7m+</h2>
-          <p>Messages Sent</p>
-        </div>
+        <Statistics />
       </section>
 
       <section>
