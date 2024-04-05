@@ -1,18 +1,15 @@
 .statistics-section {
 	align-items: center;
-	background-color: skyblue;
 	display: flex;
 	justify-content: space-between;
-	border: 1px solid red;
-	max-width: 918px;
 	margin: 120px auto 0 auto;
+	max-width: 918px;
 	padding: 0 20px;
 }
 
 .statistics__block {
 	display: flex;
 	flex-direction: column;
-	background-color: plum;
 }
 
 .statistics__icon {
@@ -45,19 +42,18 @@
 
 @media (max-width: 500px) {
 	.statistics__icon {
-		width: 35.6px;
 		height: 35.6px;
+		width: 35.6px;
 	}
 
 	.statistics__number {
 		font-size: 3.8125rem;
-		/* line-height: 7rem; */
+		line-height: 5.15rem;
 	}
 
 	.statistics__text {
 		font-size: 0.9525rem;
-		line-height: 1.4375rem;
+		line-height: 1.4313rem;
+		margin-top: 1px;
 	}
 }
-
-/* TODO add margins in media queries */

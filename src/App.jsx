@@ -1,4 +1,5 @@
 import './App.css'
+import { Features } from './components/Features/Features'
 import { MainSection } from './components/MainSection/MainSection'
 import { Nav } from './components/Nav/Nav'
 import { Statistics } from './components/Statistics/Statistics'
@@ -20,26 +21,7 @@ function App() {
       </section>
 
       <section>
-
-        <article>
-          <h3> Grow Together</h3>
-          <p>  Generate meaningful discussions with your audience and build a strong, loyal community.
-            Think of the insightful conversations you miss out on with a feedback form. </p>
-        </article>
-
-        <article>
-          <h3>  Flowing Conversations          </h3>
-          <p>  You wouldn't paginate a conversation in real life, so why do it online? Our threads have
-            just-in-time loading for a more natural flow.</p>
-        </article>
-
-        <article>
-          <h3>  Your Users
-          </h3>
-          <p>  It takes no time at all to integrate Huddle with your app's authentication solution. This means,
-            once signed in to your app, your users can start chatting immediately.</p>
-        </article>
-
+        <Features />
       </section>
 
 

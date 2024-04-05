@@ -1,0 +1,39 @@
+article {
+	background-color: plum;
+	margin-top: 15px;
+}
+
+.features__container {
+	background-color: #f6fbff;
+	height: 560px;
+	border: 1px solid red;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 100px;
+}
+
+.features__container--reverse {
+	flex-direction: row-reverse;
+}
+
+.features-top-img,
+.features-bottom-img {
+	display: block;
+	width: 100%;
+}
+
+.features__text {
+	width: 520px;
+}
+
+.features__title {
+	font-family: Poppins;
+	font-size: 2.5rem;
+	line-height: 3.75rem;
+}
+
+.features__description {
+	line-height: 1.5rem;
+	margin-top: 26px;
+}
