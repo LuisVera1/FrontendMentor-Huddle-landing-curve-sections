@@ -2,7 +2,7 @@
 	align-items: center;
 	display: flex;
 	justify-content: space-between;
-	margin: 120px auto 0 auto;
+	margin: 120px auto 133px auto;
 	max-width: 918px;
 	padding: 0 20px;
 }
@@ -37,6 +37,7 @@
 	.statistics-section {
 		flex-direction: column;
 		gap: 88px;
+		margin: 120px auto 0 auto;
 	}
 }
 

@@ -1,30 +1,47 @@
-article {
-	background-color: plum;
-	margin-top: 15px;
-}
+/* article {
+	background-color: #fff;
+} */
+
+/*TODO add margins in responsive desing*/
+/*TODO add size to image in responsive desing*/
 
 .features__container {
 	background-color: #f6fbff;
-	height: 560px;
-	border: 1px solid red;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	gap: 100px;
+	max-width: 1440px;
+	margin: 0 auto;
 }
 
 .features__container--reverse {
 	flex-direction: row-reverse;
+	background-color: #fff;
+}
+
+.container-height-1 {
+	height: 539.81px;
+}
+
+.container-height-2 {
+	height: 693px;
+}
+
+.container-height-3 {
+	height: 511.19px;
 }
 
 .features-top-img,
 .features-bottom-img {
 	display: block;
 	width: 100%;
+	max-width: 1440px;
+	margin: 0 auto;
 }
 
 .features__text {
-	width: 520px;
+	max-width: 520px;
 }
 
 .features__title {
@@ -36,4 +53,43 @@ article {
 .features__description {
 	line-height: 1.5rem;
 	margin-top: 26px;
+}
+
+@media (max-width: 1200px) {
+	.features__container {
+		justify-content: space-evenly;
+		gap: 0;
+	}
+
+	.features__text {
+		width: 50%;
+	}
+
+	.features__img {
+		width: 40%;
+		height: auto;
+	}
+}
+
+@media (max-width: 600px) {
+	.features__container,
+	.features__container--reverse {
+		flex-direction: column-reverse;
+	}
+
+	.features__text {
+		width: 81.33%;
+	}
+
+	.features__title {
+		font-size: 1.25rem;
+		line-height: 1.875rem;
+		text-align: center;
+	}
+
+	.features__description {
+		font-size: 0.875rem;
+		line-height: 1.3125rem;
+		text-align: center;
+	}
 }
