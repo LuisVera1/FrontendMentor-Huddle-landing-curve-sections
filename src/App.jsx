@@ -2,6 +2,7 @@ import './App.css'
 import { Features } from './components/Features/Features'
 import { MainSection } from './components/MainSection/MainSection'
 import { Nav } from './components/Nav/Nav'
+import { ReadySection } from './components/ReadySection/ReadySection'
 import { Statistics } from './components/Statistics/Statistics'
 
 function App() {
@@ -24,11 +25,7 @@ function App() {
         <Features />
       </section>
 
-
-      <section>
-        <h4>  Ready To Build Your Community?</h4>
-        <a href="">  Get Started For Free</a>
-      </section>
+      <ReadySection />
 
 
       <footer>
