@@ -1,5 +1,5 @@
 .main__title-section {
-	margin-top: 164px;
+	margin-top: 155px;
 }
 
 .main__title {
@@ -12,7 +12,7 @@
 
 .main__description-section {
 	max-width: 600px;
-	margin: 26px auto 0 auto;
+	margin: 20px auto 0 auto;
 }
 
 .main__description {
@@ -26,7 +26,7 @@
 .get-started__section {
 	align-items: center;
 	display: flex;
-	height: 178px;
+	height: 168px;
 	justify-content: center;
 }
 

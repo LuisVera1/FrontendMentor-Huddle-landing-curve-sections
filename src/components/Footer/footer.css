@@ -1,0 +1,13 @@
+.footer__wave {
+	display: block;
+  margin-top: 185px;
+}
+
+.footer-section {
+	background-color: var(--very-dark-cyan);
+  color: white;
+}
+
+.footer__description {
+  font-size: 0.875rem ;
+}
