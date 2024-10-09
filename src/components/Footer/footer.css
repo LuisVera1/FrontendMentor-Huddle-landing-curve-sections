@@ -1,13 +1,114 @@
 .footer__wave {
 	display: block;
-  margin-top: 185px;
+	margin: 185px auto 0 auto;
 }
 
 .footer-section {
 	background-color: var(--very-dark-cyan);
-  color: white;
+	color: white;
+	padding: 120px;
+	max-width: 1440px;
+	margin: 0 auto;
+
+	display: flex;
+	justify-content: space-between;
+}
+
+.footer__firstColumn {
+	width: 340px;
+}
+
+.footer__logo--white {
+	color: white;
+	width: 300px;
+	filter: brightness(0) saturate(100%) invert(100%);
 }
 
 .footer__description {
-  font-size: 0.875rem ;
+	font-size: 0.875rem;
+	margin-top: 27px;
+}
+
+.footer__list {
+	list-style: none;
+	margin-top: 24px;
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+}
+
+.footer__list li {
+	display: flex;
+	gap: 16px;
+}
+
+.footer__icons {
+	margin-top: 80px;
+	width: 144px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.icon-fb:hover {
+	fill: #4267b2;
+}
+
+.footer__secondColumn {
+	width: 520px;
+}
+
+.footer__newsletterTitle {
+	font-size: 1.5rem;
+	line-height: 2.25rem;
+}
+
+.footer__newsletterText {
+	font-size: 0.875rem;
+	line-height: 1.5rem;
+	max-width: 342px;
+	margin-top: 16px;
+}
+
+.footer__form {
+	margin-top: 40px;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.footer__input {
+	width: 320px;
+	height: 48px;
+	border-radius: 6px;
+	padding: 14px;
+	font-size: 1.25rem;
+	outline: none;
+	color: var(--very-dark-cyan);
+	border: 1px solid transparent;
+}
+
+.footer__input:focus {
+	border: 1px solid var(--pink);
+}
+
+.footer__input--message {
+	color: var(--light-red);
+	font-size: 0.75rem;
+	line-height: 1.5rem;
+}
+
+.footer__btn {
+	width: 160px;
+	height: 48px;
+	border-radius: 6px;
+	outline: none;
+	font-size: 1rem;
+	color: #fff;
+	font-family: 'Open sans';
+	background-color: var(--pink);
+	font-weight: 700;
+}
+
+.footer__btn:hover {
+	background-color: var(--light-pink);
 }
