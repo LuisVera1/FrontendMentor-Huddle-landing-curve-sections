@@ -1,6 +1,8 @@
 .footer__wave {
 	display: block;
 	margin: 185px auto 0 auto;
+	max-width: 1440px;
+	width: 100%;
 }
 
 .footer-section {
