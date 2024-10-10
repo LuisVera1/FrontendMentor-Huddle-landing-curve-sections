@@ -18,13 +18,9 @@ function App() {
         <MainSection />
       </main>
 
-      <section>
-        <Statistics />
-      </section>
+      <Statistics />
 
-      <section>
-        <Features />
-      </section>
+      <Features />
 
       <ReadySection />
 

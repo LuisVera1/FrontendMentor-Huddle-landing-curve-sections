@@ -1,11 +1,28 @@
+import { useState } from 'react';
 import { Facebook } from '../icons/facebook';
+import { Twitter } from '../icons/Twitter';
 import './footer.css'
 
 export const Footer = () => {
+  const [error, setError] = useState(null);
+  const [inputValue, setInputValue] = useState('')
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    console.log('validating email')
+
+    const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    const isValid = regex.test(inputValue);
+
+    if (isValid) {
+      setError(false);
+      setInputValue('')
+    } else {
+      setError(true)
+    }
+  }
+
+  const handleChange = (event) => {
+    setInputValue(event.target.value)
   }
 
   return (
@@ -37,11 +54,9 @@ export const Footer = () => {
           </ul>
 
           <div className='footer__icons'>
-            {/* <img className='icons__fb' src="./facebook.svg" alt="facebook" /> */}
-            <Facebook  className="icon-fb"/>
-          
+            <Facebook />
             <img src="./instagram.svg" alt="instagram" />
-            <img src="./twitter.svg" alt="twitter" />
+            <Twitter />
           </div>
         </div>
 
@@ -54,8 +69,9 @@ export const Footer = () => {
 
           <form className='footer__form'>
             <div>
-              <input className='footer__input' type="text" />
-              <p className='footer__input--message'>check your email please</p>
+              <input className={error ? 'footer__input--error' : 'footer__input'} type="text" value={inputValue} onChange={handleChange} />
+              {error == true && <p className='footer__input--message'>check your email please</p>}
+              {error == false && <p className='footer__input--messageOk'>You are now subscribed, thank you!</p>}
             </div>
             <button className='footer__btn' onClick={(e) => handleSubmit(e)}>Subscribe</button>
           </form>

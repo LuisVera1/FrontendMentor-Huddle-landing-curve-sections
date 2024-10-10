@@ -1,4 +1,3 @@
-
 .features__container {
 	background-color: #f6fbff;
 	display: flex;
@@ -85,5 +84,10 @@
 		font-size: 0.875rem;
 		line-height: 1.3125rem;
 		text-align: center;
+	}
+
+	.features__img {
+		width: 80%;
+		height: auto;
 	}
 }
