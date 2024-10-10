@@ -26,7 +26,7 @@ export const Footer = () => {
   }
 
   return (
-    <footer >
+    <footer role="Footer" >
 
       <img className="footer__wave" src="./bg-footer-top-desktop.svg" alt="wave" />
 
